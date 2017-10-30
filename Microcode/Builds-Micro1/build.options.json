@@ -1,0 +1,10 @@
+{
+  "builtInLibrariesFolders": "C:\\Program Files (x86)\\Arduino\\libraries",
+  "customBuildProperties": "build.path=./Builds-Micro1,build.warn_data_percentage=75,runtime.tools.avrdude.path=C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.arduinoOTA.path=C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,runtime.tools.avr-gcc.path=C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\Jonny Hyman\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\Jonny Hyman\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10803",
+  "sketchLocation": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V3\\Microcode\\Micro1\\Micro1.ino",
+  "toolsFolders": "C:\\Program Files (x86)\\Arduino\\tools-builder,C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,C:\\Users\\Jonny Hyman\\AppData\\Local\\Arduino15\\packages"
+}

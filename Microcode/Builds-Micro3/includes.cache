@@ -1,0 +1,57 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V5\\Microcode\\Builds-Micro3\\sketch\\Micro3.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V5\\Microcode\\Builds-Micro3\\sketch\\Micro3.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V5\\Microcode\\Builds-Micro3\\sketch\\Micro3.ino.cpp",
+    "Include": "Adafruit_MMA8451.h",
+    "Includepath": "C:\\Users\\Jonny Hyman\\Documents\\Arduino\\libraries\\Adafruit_MMA8451"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V5\\Microcode\\Builds-Micro3\\sketch\\Micro3.ino.cpp",
+    "Include": "Adafruit_Sensor.h",
+    "Includepath": "C:\\Users\\Jonny Hyman\\Documents\\Arduino\\libraries\\Adafruit_Sensor"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Dropbox\\Rocket Drone\\Engineering \u0026 Design\\Control_Station_0\\Auto DCS\\V5\\Microcode\\Builds-Micro3\\sketch\\Micro3.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\libraries\\Wire\\src\\utility\\twi.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jonny Hyman\\Documents\\Arduino\\libraries\\Adafruit_MMA8451\\Adafruit_MMA8451.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]
