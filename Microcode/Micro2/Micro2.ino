@@ -54,7 +54,7 @@ const char *Control_Vector_Keys[]={"H","E","a","A","B","F1","I","R","Fa1","Fa2",
 
 #define Controls_Length 13
 
-#define COUNT_DISAGREE_LIMIT 0.1
+#define COUNT_DISAGREE_LIMIT 0.5
 
 // Indices definitions
 #define H   0
@@ -379,16 +379,16 @@ void Interlink_state(){                                                         
    int dt = (millis()-Micro_LT);
    if (dt < 50) {Micro_FAULT_DETECTED=0;}
 
-   if (Control_Vector[C]>-10){ // terminal countdown abort items
+   if (Control_Vector[C]>=-10){ // terminal countdown abort items
           if (Control_Vector[Cm]!=interbuffer[Cm]){Micro_FAULT_DETECTED=2;}
      else if (Control_Vector[a]!=interbuffer[a])  {Micro_FAULT_DETECTED=3;}
-     else if (abs(
+/*     else if (abs(
               +((float)Control_Vector[C] + (float)Control_Vector[C]/1000 )
               -((float)interbuffer[C]    + (float)interbuffer[C]/1000)
                )
                                 >= COUNT_DISAGREE_LIMIT )
 
-                                {Micro_FAULT_DETECTED=4;}
+                                {Micro_FAULT_DETECTED=4;}*/
   }
 
   if (Control_Vector[Cm]==1 && (Micro_H!=Micro_LH) && !Micro_FAULT_DETECTED){

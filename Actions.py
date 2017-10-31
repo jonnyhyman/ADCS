@@ -94,8 +94,10 @@ class Actions(object):
                 self.micro.Nexusuplink(self.TestMatrix,'Micro2')
 
                 # Command to set countdown clock & hold
-                cmd['C'] =self.TestMatrix[0][0]
-                cmd['C_']=self.TestMatrix[0][1]
+                cmd['c1'] =self.TestMatrix[0][0]
+                cmd['c1_']=self.TestMatrix[0][1]
+                cmd['c2'] =self.TestMatrix[0][0]
+                cmd['c2_']=self.TestMatrix[0][1]
                 cmd['Cm']=2
 
             # Bus power-up actuation
