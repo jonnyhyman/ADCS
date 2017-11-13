@@ -17,6 +17,17 @@
 
 #include <Arduino.h>
 #include <Wire.h>
+#include <ServoTimer2.h>
+
+#define OPEN_SERVO_PPM  1000
+#define CLOSED_SERVO_PPM 2400
+
+ServoTimer2 Regulator;
+
+float map_float(float x, float in_min, float in_max, float out_min, float out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 void bonjour(){
   Serial.begin(250000);
@@ -349,6 +360,11 @@ int * actuate(int* Control_Vector){
 
   // REGULATOR CONTROL GOES HERE, PIN 4
 
+  float Regulator_Pos = map_float(Control_Vector[R], 0, 100, CLOSED_SERVO_PPM,
+                                                              OPEN_SERVO_PPM);
+
+  Regulator.write(Regulator_Pos);
+
   return Control_Vector;
 
 }
@@ -403,6 +419,8 @@ void setup() {
   Interlink_start();
   microlink.init();
   Update_setup();
+  Regulator.attach(4);
+  Regulator.write(CLOSED_SERVO_PPM);
 
 }
 

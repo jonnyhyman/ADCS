@@ -127,9 +127,11 @@ class Actions(object):
 
         self.Thermal.Eval(cmd,state)
 
-
         if inhibit != 'auto':
+
             if (state['C1']>=-20 or state['C2']>=-20): # ADCS TERMINAL COUNT:
+
+                # if state limits exceeded
                 for key,limits in Definitions.State_Limits.items() :
                     if state[key] >= limits[1]:
                         cmd['E'] = 1
@@ -140,3 +142,15 @@ class Actions(object):
                         cmd['E'] = 1
                         state['ER'] = ''.join([key,'LO'])
                         break
+
+                # if any micros go offline
+                for micro in ['u1','u2','u3','u4']:
+                    if state[micro]==0:
+                        cmd['E'] = 1
+                        state['ER'] = ''.join([micro,'LOS'])
+                        break
+
+                # if hdcs disconnected
+                if state['hdcs']==0:
+                    cmd['E'] = 1
+                    state['ER'] = 'HDCSLOS'

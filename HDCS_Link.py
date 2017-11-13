@@ -17,6 +17,7 @@
 
 import socket
 import ast
+from time import time
 
 """-----------------------------------------------------------------------------
              Primary HDCS Link occurs via TCP in the main process
@@ -139,10 +140,10 @@ class HDCS_Link(object):
     def transceive_and_parse(self,state):
         """ Do both receiving and parsing, and return the new cmds """
         if self.connected:
-
+            state['hdcs'] = 1
             data = self.transceive(state)
             if data is not None:
                 return self.cmd_parser(data)
-            # else return None
         else:
+            state['hdcs'] = 0
             self.tcp_connect()
